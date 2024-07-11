@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="stats">
+        <div class="count">
+          <p>Berührungen: <span>0</span></p>
+        </div>
+
+        <div class="cpc">
+          <p>Berührungen pro Klick: <span>0</span></p>
+        </div>
+
+        <div class="cps">
+          <p>Automatischee Berührungen: <span>0</span></p>
+        </div>
+      </div>
+
+      <div class="split">
+        <div class="lukas-area">
+          <img class="cookie" src="lukas.png" alt="Lukas" />
+        </div>
+
+        <div class="shop">
+          <div class="cpc-upgrade">
+            <div>
+              <p>Eine dicke Berührung</p>
+              <p class="info">
+                Berührungsboost: Berührungen werden mit
+                <span class="upgrade">2</span> multipliziert
+              </p>
+              <p class="info">
+                Kosten: <span class="cost">100</span> Berührungen
+              </p>
+            </div>
+
+            <div>
+              <p class="amount">0</p>
+            </div>
+          </div>
+
+          <div class="cps-upgrade">
+            <div class="type" data-type="bert">
+              <p>Der betende Bert</p>
+              <p class="info">
+                Automatische Berührung: <span class="upgrade">0.2</span>
+                Berührungen pro Sekunde
+              </p>
+              <p class="info">
+                Kosten: <span class="cost">15</span> Berührungen
+              </p>
+              <p class="statinfo">
+                Deine Berts haben dir <span class="stat">0</span> Anbetungen
+                generiert
+              </p>
+            </div>
+
+            <div>
+              <p class="amount">0</p>
+            </div>
+          </div>
+
+          <div class="cps-upgrade">
+            <div class="type" data-type="monster">
+              <p>Eine ehrenlose Monsterdose</p>
+              <p class="info">
+                Automatische Berührung: <span class="upgrade">1</span>
+                Berührungen pro Sekunde
+              </p>
+              <p class="info">
+                Kosten: <span class="cost">100</span> Berührungen
+              </p>
+              <p class="statinfo">
+                Deine Monstere haben dir <span class="stat">0</span> Anbetungen
+                generiert
+              </p>
+            </div>
+
+            <div>
+              <p class="amount">0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="upgrade-figures">
+        <h2>Deine Upgrades</h2>
+        <div class="berts"></div>
+        <div class="monster"></div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/hero.ts"></script>
+  </body>
+</html>
