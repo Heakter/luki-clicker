@@ -8,91 +8,52 @@
   </head>
   <body>
     <div class="game-container">
-      <div class="stats">
-        <div class="count">
-          <p>Berührungen: <span>0</span></p>
+      <div class="game-area">
+        <div class="trans-bg">
+          <h1>Lukas Tempel der Freude</h1>
+        </div>
+        <div class="trans-bg stats">
+          <p class="currentclicks"><span>0.00</span> Berührungen</p>
+          <p class="clickspersecond">pro Sekunde: <span>0</span></p>
         </div>
 
-        <div class="cpc">
-          <p>Berührungen pro Klick: <span>0</span></p>
-        </div>
-
-        <div class="cps">
-          <p>Automatischee Berührungen: <span>0</span></p>
-        </div>
+        <img class="cookie" src="lukas.png" alt="Lukas" />
       </div>
 
-      <div class="split">
-        <div class="lukas-area">
-          <img class="cookie" src="lukas.png" alt="Lukas" />
-        </div>
+      <div class="build-area">
+        <h2>Lukas Halle der passiven Energie</h2>
 
-        <div class="shop">
-          <div class="cpc-upgrade">
-            <div>
-              <p>Eine dicke Berührung</p>
-              <p class="info">
-                Berührungsboost: Berührungen werden mit
-                <span class="upgrade">2</span> multipliziert
-              </p>
-              <p class="info">
-                Kosten: <span class="cost">100</span> Berührungen
-              </p>
-            </div>
-
-            <div>
-              <p class="amount">0</p>
-            </div>
-          </div>
-
-          <div class="cps-upgrade">
-            <div class="type" data-type="bert">
-              <p>Der betende Bert</p>
-              <p class="info">
-                Automatische Berührung: <span class="upgrade">0.2</span>
-                Berührungen pro Sekunde
-              </p>
-              <p class="info">
-                Kosten: <span class="cost">15</span> Berührungen
-              </p>
-              <p class="statinfo">
-                Deine Berts haben dir <span class="stat">0</span> Anbetungen
-                generiert
-              </p>
-            </div>
-
-            <div>
-              <p class="amount">0</p>
-            </div>
-          </div>
-
-          <div class="cps-upgrade">
-            <div class="type" data-type="monster">
-              <p>Eine ehrenlose Monsterdose</p>
-              <p class="info">
-                Automatische Berührung: <span class="upgrade">1</span>
-                Berührungen pro Sekunde
-              </p>
-              <p class="info">
-                Kosten: <span class="cost">100</span> Berührungen
-              </p>
-              <p class="statinfo">
-                Deine Monstere haben dir <span class="stat">0</span> Anbetungen
-                generiert
-              </p>
-            </div>
-
-            <div>
-              <p class="amount">0</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="upgrade-figures">
-        <h2>Deine Upgrades</h2>
+        <h2 class="lower-mb">Lukas treue Berts</h2>
+        <p>
+          Aktuell werden 0 Berührungen pro Sekunde durch alle Berts generiert
+          und jeweils 0 Berührung pro Bert insgesamt wurden 0 Berührungen durch
+          Berts produziert.
+        </p>
         <div class="berts"></div>
-        <div class="monster"></div>
+      </div>
+
+      <div class="shop-area">
+        <div class="expensive">
+          <div class="cursor-bert">x</div>
+        </div>
+
+        <div class="cps-upgrade type" data-type="bert">
+          <div>
+            <p>Der betende Bert</p>
+            <p class="upgrade">
+              <span>0.1</span>
+            </p>
+            <p class="info"><span class="cost">15</span> Berührungen</p>
+            <p class="statinfo">
+              Deine Berts haben dir <span class="stat">0</span> Anbetungen
+              generiert
+            </p>
+          </div>
+
+          <div>
+            <p class="amount">0</p>
+          </div>
+        </div>
       </div>
     </div>
 
